@@ -12,9 +12,25 @@ plugins {
 dependencies {
     implementation("androidx.appcompat:appcompat:1.1.0")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
-    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.13")
     androidTestImplementation("androidx.test.ext:junit:1.1.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+
+    // litho
+    implementation("com.facebook.litho:litho-core:0.37.0")
+    implementation("com.facebook.litho:litho-widget:0.37.0")
+
+    annotationProcessor("com.facebook.litho:litho-processor:0.37.0'")
+
+    // SoLoader
+    implementation("com.facebook.soloader:soloader:0.9.0")
+
+    // For integration with Fresco
+    implementation("com.facebook.litho:litho-fresco:0.37.0")
+
+    // For testing
+    testImplementation("com.facebook.litho:litho-testing:0.37.0")
+
 }
 
 android {
