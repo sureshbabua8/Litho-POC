@@ -2,6 +2,7 @@ buildscript {
     repositories {
         mavenCentral()
         google()
+        jcenter()
     }
 }
 
@@ -19,8 +20,9 @@ dependencies {
     // litho
     implementation("com.facebook.litho:litho-core:0.37.0")
     implementation("com.facebook.litho:litho-widget:0.37.0")
+    implementation("com.facebook.fbjni:fbjni:0.0.2")
 
-    annotationProcessor("com.facebook.litho:litho-processor:0.37.0'")
+    annotationProcessor("com.facebook.litho:litho-processor:0.37.0")
 
     // SoLoader
     implementation("com.facebook.soloader:soloader:0.9.0")
@@ -30,6 +32,12 @@ dependencies {
 
     // For testing
     testImplementation("com.facebook.litho:litho-testing:0.37.0")
+
+    implementation("com.facebook.litho:litho-sections-core:0.37.0")
+    implementation("com.facebook.litho:litho-sections-widget:0.37.0")
+    compileOnly("com.facebook.litho:litho-sections-annotations:0.37.0")
+
+    annotationProcessor("com.facebook.litho:litho-sections-processor:0.37.0")
 
 }
 
