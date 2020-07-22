@@ -48,24 +48,6 @@ public class LaunchActivity extends AppCompatActivity {
     }
 }
 
-//@LayoutSpec
-//class LaunchLayoutSpec {
-//    @OnCreateLayout
-//    static Component onCreateLayoutContent(ComponentContext c) {
-//        return Column.create(c)
-//                .child(
-//                        Card.create(c)
-//                                .cardBackgroundColorRes(R.color.colorPrimary)
-//                                .cornerRadiusDip(2)
-//                                .elevationDip(2)
-//                                .content(Text.create(c).text("Button").build())
-//                )
-//                .alignItems(YogaAlign.CENTER)
-//                .justifyContent(YogaJustify.CENTER)
-//                .build();
-//    }
-//}
-
 @LayoutSpec
 class LaunchLayoutSpec {
     @OnCreateLayout
