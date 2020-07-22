@@ -1,5 +1,6 @@
 package com.amirthasureshbabu.litho_poc;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.facebook.litho.Component;
@@ -7,7 +8,6 @@ import com.facebook.litho.ComponentContext;
 import com.facebook.litho.LithoView;
 import com.facebook.litho.sections.SectionContext;
 import com.facebook.litho.sections.widget.RecyclerCollectionComponent;
-import com.facebook.litho.widget.Text;
 import com.facebook.soloader.SoLoader;
 
 import androidx.appcompat.app.AppCompatActivity;
