@@ -67,7 +67,8 @@ android {
     }
 }
 
-tasks.register<Exec>("runDockerImage") {
-    commandLine("sh", "backend.sh")
+dockerRun {
+    name = "cs125-backend"
+    image = "course-explorer-ktor:latest"
+    ports("8080:8080")
 }
-
