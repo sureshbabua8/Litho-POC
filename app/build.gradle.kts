@@ -7,6 +7,7 @@ buildscript {
 }
 
 plugins {
+    id("com.palantir.docker-run") version "0.25.0"
     id("com.android.application")
 }
 
@@ -64,5 +65,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+}
+
+tasks.register<Exec>("runDockerImage") {
+    commandLine("sh", "backend.sh")
 }
 
